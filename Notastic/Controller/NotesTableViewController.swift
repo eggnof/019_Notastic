@@ -36,7 +36,7 @@ class NotesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes?.count ?? 1//Table should be equal to the number of items in noteArray
+        return notes?.count ?? 1//Table should be equal to the number of items in note Results container
     }
     
     
@@ -57,7 +57,7 @@ class NotesTableViewController: UITableViewController {
     //A row was selected
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print("You selected this row!")
+        print("You selected this row: \(notes?[indexPath.row].title)!")
         
         //Trigger Segue
         performSegue(withIdentifier: "goToNote", sender: self)
@@ -87,7 +87,7 @@ class NotesTableViewController: UITableViewController {
                 let newNote = Note()
                 newNote.title = textField.text ?? "No notes yet!" //Assign the newItems title to the current textField Value
                 
-                //Save new items to context
+                //Save new items to Realm
                 self.save(note: newNote)
                 
                 //Refresh tableView data

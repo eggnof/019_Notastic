@@ -1,0 +1,6 @@
+framework module Pods_Notastic {
+  umbrella header "Pods-Notastic-umbrella.h"
+
+  export *
+  module * { export * }
+}
