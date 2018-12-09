@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60CB173779E1BAB830CBC815 /* Pods_Notastic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476A86E8860BA2812D3494B1 /* Pods_Notastic.framework */; };
 		6400582221B43129009CF59E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6400582121B43129009CF59E /* AppDelegate.swift */; };
 		6400582721B43129009CF59E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6400582521B43129009CF59E /* Main.storyboard */; };
 		6400582A21B43129009CF59E /* Notastic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6400582821B43129009CF59E /* Notastic.xcdatamodeld */; };
 		6400582C21B4312A009CF59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6400582B21B4312A009CF59E /* Assets.xcassets */; };
 		6400582F21B4312A009CF59E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6400582D21B4312A009CF59E /* LaunchScreen.storyboard */; };
-		644312ED21B43B9700A54E89 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 644312EB21B43B9700A54E89 /* DataModel.xcdatamodeld */; };
 		644312EF21B6294F00A54E89 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644312EE21B6294F00A54E89 /* NoteViewController.swift */; };
 		6468786321B4329A0067B26B /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6468786221B4329A0067B26B /* NotesTableViewController.swift */; };
+		64F1D57E21BC459000ABB542 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F1D57D21BC459000ABB542 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C7E1D4B375F40D363DA84FB /* Pods-Notastic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notastic.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notastic/Pods-Notastic.release.xcconfig"; sourceTree = "<group>"; };
+		476A86E8860BA2812D3494B1 /* Pods_Notastic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notastic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		485469D5B7639B1339269B24 /* Pods-Notastic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notastic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notastic/Pods-Notastic.debug.xcconfig"; sourceTree = "<group>"; };
 		6400581E21B43129009CF59E /* Notastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6400582121B43129009CF59E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6400582621B43129009CF59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,9 +29,9 @@
 		6400582B21B4312A009CF59E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6400582E21B4312A009CF59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6400583021B4312A009CF59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		644312EC21B43B9700A54E89 /* DateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DateModel.xcdatamodel; sourceTree = "<group>"; };
 		644312EE21B6294F00A54E89 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		6468786221B4329A0067B26B /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		64F1D57D21BC459000ABB542 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60CB173779E1BAB830CBC815 /* Pods_Notastic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		191630E6C07C660074933351 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				485469D5B7639B1339269B24 /* Pods-Notastic.debug.xcconfig */,
+				2C7E1D4B375F40D363DA84FB /* Pods-Notastic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6400581521B43129009CF59E = {
 			isa = PBXGroup;
 			children = (
 				6400582021B43129009CF59E /* Notastic */,
 				6400581F21B43129009CF59E /* Products */,
+				191630E6C07C660074933351 /* Pods */,
+				EF5AE39639EF2F9339B662BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,7 +88,7 @@
 		6468785D21B431A10067B26B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				644312EB21B43B9700A54E89 /* DataModel.xcdatamodeld */,
+				64F1D57D21BC459000ABB542 /* Note.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,6 +121,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EF5AE39639EF2F9339B662BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				476A86E8860BA2812D3494B1 /* Pods_Notastic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6400583321B4312A009CF59E /* Build configuration list for PBXNativeTarget "Notastic" */;
 			buildPhases = (
+				076C921F3425C9D1380DC80C /* [CP] Check Pods Manifest.lock */,
 				6400581A21B43129009CF59E /* Sources */,
 				6400581B21B43129009CF59E /* Frameworks */,
 				6400581C21B43129009CF59E /* Resources */,
+				DC37439727F2E10556010019 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,16 +197,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		076C921F3425C9D1380DC80C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notastic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC37439727F2E10556010019 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Notastic/Pods-Notastic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Notastic/Pods-Notastic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6400581A21B43129009CF59E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6400582A21B43129009CF59E /* Notastic.xcdatamodeld in Sources */,
-				644312ED21B43B9700A54E89 /* DataModel.xcdatamodeld in Sources */,
 				6400582221B43129009CF59E /* AppDelegate.swift in Sources */,
 				644312EF21B6294F00A54E89 /* NoteViewController.swift in Sources */,
 				6468786321B4329A0067B26B /* NotesTableViewController.swift in Sources */,
+				64F1D57E21BC459000ABB542 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +399,7 @@
 		};
 		6400583421B4312A009CF59E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 485469D5B7639B1339269B24 /* Pods-Notastic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -341,6 +417,7 @@
 		};
 		6400583521B4312A009CF59E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C7E1D4B375F40D363DA84FB /* Pods-Notastic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -387,16 +464,6 @@
 			);
 			currentVersion = 6400582921B43129009CF59E /* Notastic.xcdatamodel */;
 			path = Notastic.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		644312EB21B43B9700A54E89 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				644312EC21B43B9700A54E89 /* DateModel.xcdatamodel */,
-			);
-			currentVersion = 644312EC21B43B9700A54E89 /* DateModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
