@@ -14,4 +14,6 @@ class Note: Object {
     @objc dynamic var title : String = ""
     @objc dynamic var contents : String = ""
     
+    //Define relationship to parent object
+    var parentCategory = LinkingObjects(fromType: Category.self, property: "noteList")
 }
